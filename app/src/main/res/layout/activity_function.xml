@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- 실시간 CCTV 버튼 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/realtimeCCTVButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cctv"
+                android:background="@android:color/transparent" /> <!-- CCTV 이미지 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="실시간 CCTV"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:background="#80000000"
+                android:gravity="center"/> <!-- 반투명 배경 -->
+        </FrameLayout>
+
+        <!-- 알람 및 예약 버튼 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/alarmReservationButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/alarm"
+                android:background="@android:color/transparent" /> <!-- 알람 이미지 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="알람 및 예약"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:background="#80000000"
+                android:gravity="center"/> <!-- 반투명 배경 -->
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- 감시 모드 활성화 버튼 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/surveillanceModeButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/surveillance"
+                android:background="@android:color/transparent" /> <!-- 감시 모드 이미지 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="감시모드 활성화"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:background="#80000000"
+                android:gravity="center"/> <!-- 반투명 배경 -->
+        </FrameLayout>
+
+        <!-- 온습도 확인 버튼 -->
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/temperatureCheckButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/temperature_check"
+                android:background="@android:color/transparent" /> <!-- 온습도 확인 이미지 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="온습도 확인"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:background="#80000000"
+                android:gravity="center"/> <!-- 반투명 배경 -->
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
