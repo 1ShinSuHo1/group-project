@@ -1,6 +1,5 @@
 package com.example.sh_project;
 
-// 응답 데이터를 받을 클래스
 public class SignUpResponse {
     private boolean success;
     private String message;
@@ -10,7 +9,7 @@ public class SignUpResponse {
         this.message = message;
     }
 
-    // Getters and Setters
+    // Getter와 Setter
     public boolean isSuccess() {
         return success;
     }
@@ -27,4 +26,3 @@ public class SignUpResponse {
         this.message = message;
     }
 }
-

@@ -7,7 +7,6 @@
     android:gravity="center"
     android:background="#ffffff">
 
-    <!-- 회원가입 제목 -->
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -19,31 +18,8 @@
         android:gravity="center"
         android:layout_marginBottom="40dp"/>
 
-    <!-- 이름 입력 -->
     <EditText
-        android:id="@+id/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="이름"
-        android:inputType="textPersonName"
-        android:padding="12dp"
-        android:background="@android:drawable/edit_text"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- 전화번호 입력 -->
-    <EditText
-        android:id="@+id/phoneNumber"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="전화번호"
-        android:inputType="phone"
-        android:padding="12dp"
-        android:background="@android:drawable/edit_text"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- 아이디 입력 -->
-    <EditText
-        android:id="@+id/username"
+        android:id="@+id/id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="아이디"
@@ -52,7 +28,6 @@
         android:background="@android:drawable/edit_text"
         android:layout_marginBottom="16dp"/>
 
-    <!-- 비밀번호 입력 -->
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
@@ -63,7 +38,6 @@
         android:background="@android:drawable/edit_text"
         android:layout_marginBottom="16dp"/>
 
-    <!-- 비밀번호 확인 입력 -->
     <EditText
         android:id="@+id/passwordConfirm"
         android:layout_width="match_parent"
@@ -74,9 +48,8 @@
         android:background="@android:drawable/edit_text"
         android:layout_marginBottom="16dp"/>
 
-    <!-- 라즈베리파이 번호 입력 -->
     <EditText
-        android:id="@+id/raspberryPiId"
+        android:id="@+id/serialNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="라즈베리파이 번호"
@@ -85,7 +58,6 @@
         android:background="@android:drawable/edit_text"
         android:layout_marginBottom="24dp"/>
 
-    <!-- 회원가입 완료 버튼 -->
     <Button
         android:id="@+id/signUpButton"
         android:layout_width="match_parent"

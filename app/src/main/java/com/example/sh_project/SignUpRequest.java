@@ -1,43 +1,24 @@
 package com.example.sh_project;
 
 public class SignUpRequest {
-    String name;
-    String phone;
-    String username;
-    String password;
-    String raspberryPiId;
+    private String id;           // 서버의 id 필드에 매핑
+    private String password;     // 서버의 password 필드에 매핑
+    private String serialNumber; // 서버의 serialNumber 필드에 매핑
 
-    public SignUpRequest(String name, String phone, String username, String password, String raspberryPiId) {
-        this.name = name;
-        this.phone = phone;
-        this.username = username;
+    // 생성자
+    public SignUpRequest(String id, String password, String serialNumber) {
+        this.id = id;
         this.password = password;
-        this.raspberryPiId = raspberryPiId;
+        this.serialNumber = serialNumber;
     }
 
-    // Getters 및 Setters
-    public String getName() {
-        return name;
+    // Getter와 Setter
+    public String getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getPassword() {
@@ -48,11 +29,11 @@ public class SignUpRequest {
         this.password = password;
     }
 
-    public String getRaspberryPiId() {
-        return raspberryPiId;
+    public String getSerialNumber() {
+        return serialNumber;
     }
 
-    public void setRaspberryPiId(String raspberryPiId) {
-        this.raspberryPiId = raspberryPiId;
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
     }
 }
